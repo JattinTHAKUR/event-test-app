@@ -1,0 +1,34 @@
+<div class="event-list-container">
+    <div class="event-list-header">
+      <h2 class="event-list-title">Event List</h2>
+      <button class="filter-button">Sort By</button>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>DATE</th>
+          <th>FROM</th>
+          <th>TO</th>
+          <th>VOYAGE STAGE</th>
+          <th>VOYAGE LEG</th>
+          <th>EVENT</th>
+          <th>POSITION</th>
+          <th>FUEL</th>
+          <th>ROB</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let event of events">
+          <td>{{ event.date }}</td>
+          <td>{{ event.from }}</td>
+          <td>{{ event.to }}</td>
+          <td>{{ event.voyageStage }}</td>
+          <td>{{ event.voyageLeg }}</td>
+          <td>{{ event.event }}</td>
+          <td>{{ event.position }}</td>
+          <td>{{ event.fuel }}</td>
+          <td>{{ event.ROB }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
